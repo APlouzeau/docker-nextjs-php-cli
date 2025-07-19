@@ -1,0 +1,49 @@
+{
+    "updateStrategy": "semantic",
+    "autoCheck": true,
+    "notifications": {
+        "onStartup": false,
+        "onWeekly": true
+    },
+    "templates": {
+        "base": {
+            "version": "1.0.0",
+            "features": ["authentication", "calendar", "payments", "google-integration"],
+            "dependencies": {
+                "nextjs": "15.3.4",
+                "php": "8.4",
+                "mariadb": "10.6"
+            }
+        },
+        "starter": {
+            "version": "1.0.0",
+            "features": ["authentication", "user-management"],
+            "dependencies": {
+                "nextjs": "15.3.4",
+                "php": "8.4",
+                "mariadb": "10.6"
+            }
+        },
+        "clean": {
+            "version": "1.0.0",
+            "features": ["minimal"],
+            "dependencies": {
+                "nextjs": "15.3.4",
+                "php": "8.4",
+                "mariadb": "10.6"
+            }
+        }
+    },
+    "migration": {
+        "guides": {
+            "1.0.x-to-1.1.x": "docs/migrations/1.0-to-1.1.md",
+            "1.x.x-to-2.0.0": "docs/migrations/1.x-to-2.0.md"
+        },
+        "breakingChanges": []
+    },
+    "support": {
+        "nodeVersions": ["18.x", "20.x", "22.x"],
+        "dockerVersions": ["20.x", "24.x"],
+        "platforms": ["linux", "darwin", "win32"]
+    }
+}

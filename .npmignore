@@ -1,0 +1,55 @@
+# Development files
+test-project/
+.git/
+.gitignore
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules and vendor directories - users will install these
+**/node_modules/
+**/vendor/
+templates/*/frontend/node_modules/
+templates/*/backend/vendor/
+
+# Build artifacts
+templates/*/frontend/.next/
+templates/*/frontend/out/
+templates/*/frontend/dist/
+
+# Lock files in templates (users should generate their own)
+templates/*/frontend/pnpm-lock.yaml
+templates/*/backend/composer.lock
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# node_modules (should be handled by npm automatically)
+node_modules/
