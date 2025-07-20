@@ -37,7 +37,8 @@ update_version() {
     npm version $version_type --no-git-tag-version
     local new_version=$(get_current_version)
     echo -e "${GREEN}✅ Version updated to ${new_version}${NC}"
-    echo $new_version
+    # Clean version output to remove any ANSI codes or extra characters
+    echo $new_version | sed 's/[^0-9.]//g'
 }
 
 update_changelog() {
