@@ -1,6 +1,6 @@
 {
     "name": "create-nextjs-php-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "CLI generator to quickly create Next.js + PHP + Docker applications with complete authentication and WSL2 optimization",
     "bin": {
         "create-nextjs-php-app": "./bin/create-app.js"
